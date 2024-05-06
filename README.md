@@ -3,6 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 # New Features
 added new scss classes for `inputClass in app.component.ts` when the `OTP is true class name digit-otp-success added` when it's false `.digit-otp-error and .shake animation` will be added for component
+![image](https://github.com/ahmedguetat62/otp-ui-app/assets/62658251/8f2e8894-2074-44a3-bcce-83738915b7f0)
+![image](https://github.com/ahmedguetat62/otp-ui-app/assets/62658251/891df499-f044-4187-9f3b-ef7f8b51b73f)
 
 
 ## Development server
