@@ -5,8 +5,12 @@
         <div class="mx-auto" style="width: 400px">
           <div class="card p-4">
             <div class="d-flex justify-content-center">
-              <div class="icon-block">
-                <img src="https://img.icons8.com/ios/50/2E9AFE/lock-2.png"/>
+              <div class="icon-block" >
+                <img *ngIf="validOtp == 0" src="https://img.icons8.com/ios/50/2E9AFE/lock-2.png"/>
+                <img *ngIf="validOtp == 1"  src="https://img.icons8.com/ios/50/80ff80/unlock-2.png"/>
+                <img *ngIf="validOtp == 2"  src=" https://img.icons8.com/ios/50/FF8080/lock-2.png"/>
+
+               
               </div>
             </div>
             <div class="text-center my-4">
@@ -14,9 +18,9 @@
               <div class="text-muted">Enter 6-digit code from yout two factor authentication APP.</div>
             </div>
             <div class="my-4">
-              <ng-otp-input  (onInputChange)="onOtpChange($event)"  [config]="configOptions"></ng-otp-input>
+              <ng-otp-input  (onInputChange)="onOtpChange($event)" [config]="configOptions"></ng-otp-input>
             </div>
-            <button class="btn btn-lg w-100 mt-3 mb-4 py-3" [ngClass]="btnStatus">{{ this.inputDigitLeft }}</button>
+            <button class="btn btn-lg w-100 mt-3 mb-4 py-3" [ngClass]="btnStatus" (click)="check()">{{ this.inputDigitLeft }}</button>
           </div>
         </div>
       </div>
