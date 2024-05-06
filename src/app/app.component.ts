@@ -17,6 +17,8 @@ export class AppComponent  implements OnInit {
   public configOptions = {
     length: 6,
     inputClass: 'digit-otp',
+    isPasswordInput:true,
+    placeholder:'',
     containerClass: 'd-flex justify-content-between',
     allowNumbersOnly:true
   }
